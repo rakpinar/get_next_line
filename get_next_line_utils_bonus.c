@@ -6,33 +6,33 @@
 /*   By: rakpinar <rakpinar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 17:14:43 by rakpinar          #+#    #+#             */
-/*   Updated: 2023/02/19 17:29:16 by rakpinar         ###   ########.fr       */
+/*   Updated: 2023/02/20 18:41:51 by rakpinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(char *buffer)
 {
 	int	i;
 
 	i = 0;
-	if (!str)
+	if (!buffer)
 		return (0);
-	while (str[i] != '\0')
+	while (buffer[i] != '\0')
 		i++;
 	return (i);
 }
 
-int	ft_strchr(char *str, int c)
+int	ft_strchr(char *buffer, int c)
 {
-	if (!str)
+	if (!buffer)
 		return (0);
-	while (*str != '\0')
+	while (*buffer != '\0')
 	{
-		if (*str == c)
+		if (*buffer == c)
 			return (1);
-		str++;
+		buffer++;
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: rakpinar <rakpinar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 17:15:09 by rakpinar          #+#    #+#             */
-/*   Updated: 2023/02/19 17:31:02 by rakpinar         ###   ########.fr       */
+/*   Updated: 2023/02/20 18:30:17 by rakpinar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int		ft_strchr(char *str, int c);
 int		ft_strlen(char *str);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_get_line(char *str);
-char	*ft_get_new_str(char *str);
+char	*ft_get_new_buffer(char *str);
 
 #endif
